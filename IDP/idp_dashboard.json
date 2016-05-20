@@ -1,0 +1,21 @@
+[
+  {
+    "_id": "IDP",
+    "_type": "dashboard",
+    "_source": {
+      "title": "IDP",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":4,\"id\":\"Attack_Map\",\"row\":7,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\",\"panelIndex\":1},{\"col\":10,\"id\":\"Attack_Count\",\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\",\"panelIndex\":2},{\"col\":1,\"id\":\"Top_15_Attacks\",\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\",\"panelIndex\":3},{\"col\":1,\"id\":\"Top_15_Attacked_Ips\",\"row\":4,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\",\"panelIndex\":4},{\"col\":10,\"id\":\"Top_15_Attacker\",\"row\":4,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\",\"panelIndex\":5},{\"col\":4,\"id\":\"Attack_Count_Type\",\"row\":4,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\",\"panelIndex\":6},{\"col\":4,\"columns\":[\"dst_ip\",\"src_ip\",\"attack_name\",\"t_severity\",\"action\"],\"id\":\"Latest_IDP_Events\",\"row\":1,\"size_x\":6,\"size_y\":3,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\",\"panelIndex\":7},{\"col\":10,\"id\":\"Attack_Origin_Action\",\"row\":8,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\",\"panelIndex\":8},{\"col\":1,\"id\":\"Top_15_Attack_Origin_Countries\",\"row\":8,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\",\"panelIndex\":9}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-4h",
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"key\":\"attack_name.raw\",\"value\":\"HTTP:INVALID:MISSING-REQ\",\"disabled\":false,\"negate\":true,\"alias\":null},\"query\":{\"match\":{\"attack_name.raw\":{\"query\":\"HTTP:INVALID:MISSING-REQ\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "Latest_IDP_Events",
+    "_type": "search",
+    "_source": {
+      "title": "Latest_IDP_Events",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "src_ip",
+        "dst_ip",
+        "attack_name",
+        "t_severity",
+        "action"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"filter\":[{\"meta\":{\"disabled\":false,\"index\":\"logstash-*\",\"key\":\"tags\",\"negate\":false,\"value\":\"IDP\"},\"query\":{\"match\":{\"tags\":{\"query\":\"IDP\",\"type\":\"phrase\"}}}}],\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}"
+      }
+    }
+  }
+]
